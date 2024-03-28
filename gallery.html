@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Young+Serif&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<style>
+    .gallery{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+    .gallery2{
+        display: flex;
+        justify-content:space-evenly;
+        margin-left: 5%;
+        margin-right: 2%;
+        margin-top: 1px;
+        
+    }
+    .top3{
+        margin-top: 34px;
+        margin-bottom: 23px;
+    }
+    .top3 h2{
+        margin-left: 134px;
+    }
+   
+</style>
+
+<body>
+    <div id="top">
+
+        <h1 id="name">Sotail's</h1>
+        <div class="nav">
+
+
+
+            <ul>
+                <li>
+                    <a href="/">
+                        <h3>Home</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <h3>About us</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        <h3>Gallery</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="reservation.html" target="_blank">
+                        <h3>Reservation</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<br><br><br>
+
+    <hr noshade="noshade">
+    
+    <div class="best">
+        
+        <h2>Sotail's Best Click's</h2>
+        <hr noshade="noshade">
+    </div>
+
+    <div class="top3">
+
+        <h2>Photo Gallery</h2>
+    </div>
+
+    <div class="gallery">
+        <div class="v11"><img src="s1.webp" alt="" height="82%" style="padding-left: 16%;"></div>
+        <div class="v11"><img src="banana.webp" alt="" height="82%" style="padding-left: 18%;"></div>
+        <div class="v11"><img src="s5.webp" alt="" height="82%" style="padding-left: 18%; margin-left: 30px;" width="100%"></div>
+        <div class="v11"><img src="s3.webp" alt="" height="82%" style="padding-left: 10%; margin-right: 29px;"></div>
+        
+    </div>
+    
+    <div class="gallery2">
+    <div class="v11"><img src="ex3.webp" alt="" style="padding-left: 26%;"></div>
+    
+    <div class="v11"><img src="pasta.webp" alt="" style="padding-left: 26%;" width="408px" height="54%"></div>
+    <div class="v11"><img src="s6.webp" alt="" style="padding-left: 4%;" height="82%"></div>
+    <div class="v11"><img src="ex2.webp" style="padding-left:0px;  margin-right:86px;"alt="" height="56%" width="292px"  ></div>
+</div>
+<div class="gallery3">
+
+</div>
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content"></div>
+    </div>
+
+
+
+    <div class="last">
+        <hr noshade="noshade">
+      
+        <p>Copyright © 2023 Sotail's - All Rights Reserved. <br> <br>
+           Gmail: vedantdange149@gmail.com</p>
+        <p1>Powered by cghchb hj.com</p1>
+      
+              </div>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".v11 img");
+        const modal = document.getElementById("myModal");
+        const modalContent = document.querySelector(".modal-content");
+
+        images.forEach(img => {
+            img.addEventListener("click", function () {
+                modal.style.display = "block";
+                modalContent.innerHTML = `<span class="close">&times;</span><img src="${this.src}">`;
+                const closeBtn = document.querySelector(".close");
+                closeBtn.addEventListener("click", function () {
+                    modal.style.display = "none";
+                });
+            });
+        });
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    });
+
+</script>
+</html>
