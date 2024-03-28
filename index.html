@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Young+Serif&display=swap"
+        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+
+    <title>Document</title>
+</head>
+<style>
+       * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        
+        font-family: 'Young Serif', serif !important;
+    }
+
+    #top {
+        z-index: 99;
+    }
+
+    .nav {
+        display: flex;
+        float: right;
+        padding-top: 18px;
+        padding-bottom: 20px;
+        text-decoration: none;
+
+
+    }
+
+    .nav ul li {
+        list-style: none;
+        padding-left: px;
+        padding-right: 74px;
+        text-decoration: none;
+
+
+
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav ul {
+        display: flex;
+    }
+
+    #name {
+        float: left;
+        padding-left: 45px;
+        background-color: white;
+    }
+
+
+    .background {
+        width: 100%;
+        background-image: url("vegetables-set-left-black-slate.jpg");
+        position: center center;
+        background-size: cover;
+        height: 95vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        opacity: 2;
+
+
+
+    }
+
+    .container {
+
+        margin-left: 158px;
+        padding-left: 74px;
+        
+        border-left: 2px solid white;
+        height: 400px;
+
+    }
+
+    .container p {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .container h1 {
+        margin-top: 5%;
+        font-size: 48px;
+
+    }
+    
+
+    #top {
+
+        width: 100%;
+        height: 60px;
+        background-color: white;
+        /* border: 2px solid white; */
+        position: fixed;
+        font-size: 4px;
+        font-family: 'Young Serif', serif !important;
+    }
+
+    #top h1 {
+        margin-left: 45px;
+        font-size: 43px;
+        font-family: 'Dancing Script', cursive ;
+    
+
+    }
+
+
+    button {
+        position: -webkit-sticky;
+    }
+
+    .btn {
+        color: black;
+        background-color: white;
+        border: none;
+        border: 2px solid white;
+        padding: 22px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        animation: wiggle 2s linear infinite;
+    }
+
+
+    .online button a h3{
+        text-decoration: none;
+
+    }
+    @keyframes wiggle {
+
+        0%,
+        7% {
+            transform: rotateZ(0);
+        }
+
+        15% {
+            transform: rotateZ(-15deg);
+        }
+
+        20% {
+            transform: rotateZ(10deg);
+        }
+
+        25% {
+            transform: rotateZ(-6deg);
+        }
+
+        30% {
+            transform: rotateZ(6deg);
+        }
+
+        35% {
+            transform: rotateZ(-4deg);
+        }
+
+        40%,
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+    .btn button {
+        position: webkit-sticky;
+        left: calc(50% - 3em);
+        top: calc(50% - 2em);
+
+        height: 4em;
+        width: 7em;
+
+
+        border: none;
+
+        border-radius: 0 0 0.2em 0.2em;
+        color: black;
+        font-family: Helvetica, Arial, Sans-serif;
+        font-size: 1em;
+        transform-origin: 50% 5em;
+    }
+
+    .btn a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+
+    .btn:hover {
+        background-color: white;
+        border-top: 7px solid orange;
+        color: black;
+
+    }
+
+    .btn a:hover {
+        color: black;
+
+    }
+
+    .nav ul li:hover {
+        color: gray;
+        text-decoration: underline;
+
+    }
+
+    .box1 {
+        display: flex;
+        padding-left: 49px;
+
+        height: 40%;
+        margin-bottom: 4px;
+    }
+    
+
+    .img1 {
+        padding-left: 178px;
+
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .img1 img {
+        border-radius: 36px;
+    }
+
+    .img2 img {
+        border-radius: 36px;
+    }
+    .info1 h2{
+        font-size: 30px;
+    }
+
+    .info1 {
+
+        padding-right: 0%;
+        margin-top: 46px;
+        margin-bottom: 30px;
+        margin-left: 90px;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Young Serif', serif;
+        color: rgb(75, 73, 73);
+    }
+
+    .heading h2 {
+        padding-left: 149px;
+        margin-top: 31px;
+        margin-bottom: 28px;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Young Serif', serif;
+        color: rgb(75, 73, 73);
+
+
+    }
+
+    .box2 {
+
+        display: flex;
+        margin-top: 67px;
+    }
+
+    .img2 {
+
+        margin-left: 120px;
+
+    }
+
+    .info2 {
+        color: rgb(75, 73, 73);
+        margin-top: 70px;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Young Serif', serif;
+    }
+
+    .heading hr {
+        margin-left: 9%;
+        margin-right: 6%;
+        height: 2px;
+    }
+
+    .info1 h1:hover {
+        animation-play-state: running;
+    }
+
+    .online {
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Young Serif', serif;
+        height: 100px;
+        background-color: antiquewhite;
+        display: flex;
+        padding-left: 25%;
+        padding-bottom: 12px;
+    }
+
+    .online h1 {
+        margin-top: 25px;
+    }
+
+    .online button {
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Young Serif', serif;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        border-radius: 6px;
+        margin-top: 23px;
+        bottom: 3px;
+        margin-left: 40px;
+        padding-left: 12px;
+        padding-right: 12px;
+
+    }
+
+    .various {
+        margin-top: 28px;
+        display: flex;
+        margin-right: 8%;
+
+        
+        
+    }
+
+    .v1 {
+        
+        margin-left: 8%;
+
+    }
+
+    
+
+    .v1 img {
+        cursor: pointer;
+        
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .best h2 {
+        margin-left: 9%;
+        margin-bottom: 15px;
+
+    }
+
+    .best {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .best hr {
+        margin-left: 9%;
+        margin-right: 6%;
+        height: 2px
+    }
+
+    .modal-content {
+        margin: 5% auto;
+        padding: 20px;
+        max-width: 600px;
+        background-color: #fefefe;
+        position: relative;
+    }
+
+    .modal-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .close {
+        color: #aaa;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover
+    .close:focus {
+        color: black;
+    }
+
+    .last {
+        background-color: antiquewhite;
+        height: 150px;
+        display: flex;
+    }
+    .last hr{
+        margin-left: 9%;
+        margin-right: 6%;
+        height: 2px
+    }
+    .last p{
+        margin-top: 38px;
+    }
+    .last p1{
+        padding-left: 32%;
+        margin-top: 38px;
+    }
+
+    .follow {
+
+        margin-left: 33%;
+        margin-top: 27px;
+    }
+
+    .follow img {
+        padding-right: 6%;
+
+    }
+    .social hr{
+        margin-left: 9%;
+        margin-right: 6%;
+        height: 2px
+    }
+    .social h2{
+        margin-left: 9%;
+        margin-bottom: 15px;
+    }.social{
+        margin-bottom: 34px;
+    }
+   .nav ul li h3{
+    font-size: 20px;
+   }
+    
+</style>
+
+<body>
+
+    <div id="top">
+
+        <h1 id="name">Sotail's</h1>
+        <div class="nav">
+
+
+
+            <ul>
+                <li>
+                    <a href="/">
+                        <h3><b>Home</b></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <h3><b>About us</b></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html">
+                        <h3> <b>Gallery</b></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="reservation.html" target="_blank">
+                        <h3><b>Reservation</b></h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="background">
+
+
+        <div class="container">
+
+            <h1>Sotail's pizza <br>
+                with a much <br>
+                about crust. <br>
+            </h1>
+            <p>Authentic Italian with a modern twist.</p>
+
+            <a href="orderonline.html"> <button  class="btn btn-success"> Order Now </button></a>
+
+
+
+
+
+        </div>
+    </div>
+    <div class="heading">
+
+        <h2>Our Story</h2>
+        <hr noshade="noshade" align="center">
+    </div>
+
+    <div class="box1">
+        <div class="info1">
+
+            <h2>Dine With Family</h2> <br>
+            <p>
+
+                When you dine with us, you dine with family. The recipes that we <br>share with you have been passed
+                down to us,
+                and we are excited to <br> be able to share them with you. Our ingredients are fresh and <br> healthy,
+                just like we
+                would choose in our own home. Welcome! Make yourself at home!
+            </p>
+
+        </div>
+        <div class="img1">
+
+            <img src="noddles.webp" height="90%" width="75%" alt="">
+
+        </div>
+
+    </div>
+
+    <div class="box2">
+        <div class="img2">
+            <img src="event.jpeg" height="85%" width="65%" alt="">
+        </div>
+        <div class="info2">
+            <h2>Specail Events</h2> <br>
+            <p>Our staff works to make every visit special, but some events call for just a little more sparkle. Do you
+                have a special event coming up? Contact us and let us know. From private celebration rooms to special
+                menus, we've got you covered. </p>
+
+        </div>
+
+
+
+    </div>
+    <br>
+    <div class="online">
+
+
+        <h1 align="center">Hungry? Order for pickup or delivery.</h1>
+
+
+
+       <a href="orderonline.html"><button ><h4>Order Online</h4></button></a> 
+    </div>
+
+    <div class="best">
+
+        <h2>Sotail's Best</h2>
+        <hr noshade="noshade">
+    </div>
+
+    <div class="various">
+        <div class="v1"><img src="s1.webp" alt="" height="92%" width="114%" style="padding-left: 17px;"></div>
+        <div class="v1"><img src="s6.webp" alt="" height="92%" width="114%"></div>
+        <div class="v1"><img src="s3.webp" alt="" height="92%" width="114%"></div>
+        <div class="v1"><img src="s5.webp" alt="" height="92%" width="114%"></div>
+        
+
+
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content"></div>
+    </div>
+
+
+
+
+
+
+
+    <div class="social">
+
+        <h2>Social</h2>
+        <hr noshade="noshade">
+        <div class="follow">
+          <a href=" https://www.youtube.com"  target="_blank"> <img src="youtube.png" alt="" height="40px" ></a>
+           <a href="https://www.twitter.com"><img src="twitter.png" alt="" height="50px"></a>
+          <a href="https://www.facebook.com"><img src="facebook.png" alt="" height="50px"></a>  
+           <a href="https://www.instagram.com"><img src="insta.png" alt="" height="50px"></a>
+           <a href="https://in.pinterest.com"> <img src="pin.png" alt="" height="50px"></a>
+        </div>
+        
+    </div>
+
+    <div class="last">
+  <hr noshade="noshade">
+
+  <p>Copyright © 2023 Sotail's - All Rights Reserved. <br> <br>
+     Gmail: vedantdange149@gmail.com</p>
+  <p1>Powered by cghchb hj.com</p1>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll(".v1 img");
+        const modal = document.getElementById("myModal");
+        const modalContent = document.querySelector(".modal-content");
+
+        images.forEach(img => {
+            img.addEventListener("click", function () {
+                modal.style.display = "block";
+                modalContent.innerHTML = `<span class="close">&times;</span><img src="${this.src}">`;
+                const closeBtn = document.querySelector(".close");
+                closeBtn.addEventListener("click", function () {
+                    modal.style.display = "none";
+                });
+            });
+        });
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    });
+
+</script>
+
+</html>
